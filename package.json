@@ -1,0 +1,22 @@
+{
+  "name": "react-native-preload-images",
+  "version": "1.0.0-beta.2",
+  "description": "Download and save images for offline use, in react-native.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "image",
+    "preload",
+    "pre-load",
+    "cache",
+    "FastAcademy"
+  ],
+  "author": "FastAcademy",
+  "license": "ISC",
+  "dependencies": {
+    "react-native-fetch-blob": "^0.10.8"
+  }
+}

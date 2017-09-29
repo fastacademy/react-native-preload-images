@@ -11,19 +11,24 @@ This package is dependent on [`react-native-fetch-blob`](https://github.com/wkh2
 
 ## Basic usage
 
+imports
+
     import { preloadImages, PreloadedImage } from 'react-native-preload-images'
 
-    //Use the same images array names to display with PreloadedImage.
+An array of objects, each with a name and the uri of the image, is required. The names can 
+be anything you like and will be used to display the image with PreloadedImage.
+
     const images = [
         {name: 'pic1.png', uri: 'https://mypics.com/pic1.png'},
         {name: 'pic2.png', uri: 'https://mypics.com/pic2.png'}    
     ];
     
-    //Only needs to be done once
+Download and save images.
+
     preloadImages(images);
 
-    //Same props as react-native's Image 
-    //except use name instead of source
+PreloadedImage uses the same props as react-native's Image except the image name is used instead of a source.
+
     <PreloadedImage
         style={{height: 100, width: 100}}
         name={images[0].name}/>

@@ -27,7 +27,7 @@ Download and save images.
 
     preloadImages(images);
 
-PreloadedImage uses the same props as react-native's Image except the image name is used instead of a source.
+PreloadedImage uses the same props as react-native's Image except the image's name is used instead of a source.
 
     <PreloadedImage
         style={{height: 100, width: 100}}

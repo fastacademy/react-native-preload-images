@@ -1,6 +1,6 @@
 {
   "name": "react-native-preload-images",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0-beta.3",
   "description": "Download and save images for offline use, in react-native.",
   "main": "index.js",
   "scripts": {

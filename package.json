@@ -1,7 +1,8 @@
 {
   "name": "react-native-preload-images",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0",
   "description": "Download and save images for offline use, in react-native.",
+  "repository": "https://github.com/fastacademy/react-native-preload-images",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

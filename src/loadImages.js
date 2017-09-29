@@ -1,11 +1,13 @@
 import RNFetchBlob from 'react-native-fetch-blob';
 
-export function preloadImages(images) {
-  images.forEach((image) => {
-    saveImage (image[0], image[1]).catch((err) => alert(`Error loading images${err}`))
-  });
+export default function loadImages(images) {
+  if (images && images.length > 0)
+    images.forEach(saveImage);
 }
 
-async function saveImage (name, uri) {
-  await RNFetchBlob.config({ path: RNFetchBlob.fs.dirs.CacheDir + "/images/" + name }).fetch("GET", uri, {});
+async function saveImage ({name, uri}) {
+  const path = `${RNFetchBlob.fs.dirs.CacheDir}/images/${name}`;
+
+  if (!await RNFetchBlob.fs.exists(path))
+    await RNFetchBlob.config({ path }).fetch("GET", uri, {});
 }

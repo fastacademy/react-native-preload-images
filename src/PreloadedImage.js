@@ -9,7 +9,7 @@ export default class extends React.Component {
         {...this.props}
         source={{
           isStatic: true,
-          uri: `file://${RNFetchBlob.fs.dirs.CacheDir}/images/${this.props.fileName}`
+          uri: `file://${RNFetchBlob.fs.dirs.CacheDir}/images/${this.props.name}`
         }}/>
     );
   }

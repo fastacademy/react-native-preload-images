@@ -1,6 +1,6 @@
 {
   "name": "react-native-preload-images",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Download and save images for offline use, in react-native.",
   "repository": "https://github.com/fastacademy/react-native-preload-images",
   "main": "index.js",

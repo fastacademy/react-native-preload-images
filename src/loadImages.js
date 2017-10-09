@@ -1,8 +1,8 @@
 import RNFetchBlob from 'react-native-fetch-blob';
 
-export default function loadImages(images) {
+export default async function loadImages(images) {
   if (images && images.length > 0)
-    Promise.all(images.map(saveImage)).then(() => true).catch(() => false);
+    return await Promise.all(images.map(saveImage)).then(() => true).catch(() => false);
 }
 
 async function saveImage ({name, uri}) {
